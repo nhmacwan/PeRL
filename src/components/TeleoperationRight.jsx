@@ -10,7 +10,6 @@ class Teleoperation extends Component {
         this.init_connection();
         
         this.handleMove = this.handleMove.bind(this);
-        this.handleStop = this.handleStop.bind(this);
       }
     
       init_connection() {
@@ -55,48 +54,24 @@ class Teleoperation extends Component {
         // we need to create a twist message to be published on the rosbridge
         var Twist = new window.ROSLIB.Message({
             linear: {
-                x: 1,
-                y: 0,
-                z: 0,
-            },
-            angular: {
-                x: 1,
-                y: 0,
-                z: 0,
-            }
-        });
-        // we need to publish the messga eon velocity 
-        cmd_vel.publish(
-            Twist
-        );
-
-    }
-    handleStop (event) {
-        console.log("handle stop");
-        // we need to create a ROS publisher on the topic velocity
-        var cmd_vel = new window.ROSLIB.Topic({
-            ros: this.state.ros,
-            name: "/cmd_vel",
-            messagetype: "geometry_msgs/Twist",
-        });
-
-        // we need to create a twist message to be published on the rosbridge
-        var Twist = new window.ROSLIB.Message({
-            linear: {
-                x: event.y / 50,
+                x: 0,
                 y: 0,
                 z: 0,
             },
             angular: {
                 x: 0,
                 y: 0,
-                z: event.x /50,
+                z: event.x/50,
             }
         });
         // we need to publish the messga eon velocity 
         cmd_vel.publish(
             Twist
         )
+
+    }
+    handleStop () {
+        console.log("handle move");
     }
     render(){
         return (

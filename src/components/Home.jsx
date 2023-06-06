@@ -3,6 +3,7 @@ import React, { Component } from 'react';
 
 import Connection from './Connection';
 import Teleoperation from './Teleoperation';
+import TeleoperationRight from './TeleoperationRight';
 import { Row, Col, Container, Button} from 'react-bootstrap';
 
 class Home extends Component{
@@ -33,10 +34,10 @@ class Home extends Component{
 
                     <Col>
                        <h3>Map</h3>
-                       <p> This space is reserved for displaying map.</p>
+                       <p> Bzinga! </p>
                     </Col>
                     <Col>
-                        <Teleoperation/>
+                        <TeleoperationRight/>
                     </Col>
                  </Row>  
                  </Container>
