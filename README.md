@@ -17,7 +17,3 @@ I have used WSL for ROS and a Windows PC for Web Application that was Hosting WS
 ## Step 4: Go to Config.js in scripts folder and put your robot’s IP address and port address
 
 Congratulations! Your ROS TELEOPERATION IS WORKING!
-
-
-Make sure both robot and machine are connected on the  same network.
-I have used WSL for ROS and a Windows PC for Web Application that was Hosting WSL
