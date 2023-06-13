@@ -1,4 +1,4 @@
-## For your personal use you can tell operate a robot through the following procedure:
+## For your personal use you can tele operate a robot through the following procedure:
 TeleOperation App v 1.0.0 - People and Robots Laboratory
 
 
