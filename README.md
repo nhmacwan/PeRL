@@ -1,6 +1,6 @@
 ### For your personal use you can tell operate a robot through the following procedure:
 
-![TeleOperation GIF](TeleOperation.gif = 500x300)
+![TeleOperation GIF](TeleOperation.gif)
 
 ## Step 1: Start Rosbridge on Robot
   • Check IP of Robot
