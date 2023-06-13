@@ -1,7 +1,7 @@
 ### For your personal use you can tell operate a robot through the following procedure:
 
 <!-- ![TeleOperation GIF](TeleOperation.gif = 500x300) -->
-<img src="TeleOperation.gif" , height=275></img>
+<img src="https://github.com/nhmacwan/PeRL/blob/main/TeleOperation.gif" , height=275></img>
 
 ## Step 1: Start Rosbridge on Robot
   • Check IP of Robot
